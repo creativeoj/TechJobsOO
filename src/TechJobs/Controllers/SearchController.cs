@@ -36,10 +36,11 @@ namespace TechJobs.Controllers
             {
                 jobsViewModel.Jobs = jobData.FindByColumnAndValue(jobsViewModel.Column, jobsViewModel.Value);
             }
-            
+
             jobsViewModel.Title = "Search";
 
             return View("Index", jobsViewModel);
         }
+  
     }
 }
